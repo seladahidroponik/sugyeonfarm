@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugyeong Farm</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Noto+Sans+KR:wght@700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    :root{
+      --green:#346739;
+      --blue:#4C8CE4;
+      --light:#91D06C;
+      --bg:#f6faf6;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:var(--bg);
+      color:#222;
+    }
+
+    .container{
+      width:90%;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    section{
+      padding:70px 0;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+
+      background:
+      linear-gradient(
+        135deg,
+        rgba(52,103,57,0.9),
+        rgba(76,140,228,0.8)
+      ),
+      url('https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1400&auto=format&fit=crop');
+
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero h1{
+      font-family:'Noto Sans KR', sans-serif;
+      font-size:4rem;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      max-width:650px;
+      margin:auto;
+      line-height:1.8;
+      font-size:1rem;
+    }
+
+    /* TITLE */
+
+    .title{
+      text-align:center;
+      margin-bottom:45px;
+    }
+
+    .title h2{
+      font-family:'Cinzel', serif;
+      color:var(--green);
+      font-size:2rem;
+    }
+
+    /* PRODUCT */
+
+    .product{
+      background:white;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .product img{
+      width:100%;
+      height:400px;
+      object-fit:cover;
+    }
+
+    .product-content{
+      padding:30px;
+    }
+
+    .product-content h3{
+      color:var(--green);
+      font-size:1.6rem;
+      margin-bottom:15px;
+    }
+
+    .product-content p{
+      line-height:1.8;
+      color:#555;
+      margin-bottom:25px;
+    }
+
+    .benefits{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:18px;
+    }
+
+    .benefit{
+      background:#f3faf1;
+      padding:20px;
+      border-radius:18px;
+      text-align:center;
+    }
+
+    .benefit h4{
+      color:var(--green);
+      margin-bottom:8px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+      background:linear-gradient(
+        135deg,
+        var(--green),
+        var(--blue)
+      );
+
+      color:white;
+      border-radius:30px;
+      padding:50px 30px;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-family:'Noto Sans KR', sans-serif;
+      margin-bottom:25px;
+      font-size:2rem;
+    }
+
+    .contact p{
+      line-height:2;
+      font-size:1rem;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#777;
+      font-size:0.9rem;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      .product img{
+        height:280px;
+      }
+
+      .contact h2{
+        font-size:1.6rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+
+      <h1>Sugyeong Farm</h1>
+
+      <p>
+        Selada hidroponik segar, higienis, dan berkualitas premium
+        untuk kebutuhan hidup sehat Anda.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- PRODUK -->
+  <section>
+    <div class="container">
+
+      <div class="title">
+        <h2>Produk Kami</h2>
+      </div>
+
+      <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop" alt="Selada Hidroponik">
+
+        <div class="product-content">
+
+          <h3>Fresh Hydroponic Lettuce</h3>
+
+          <p>
+            Sugyeong Farm menghadirkan selada hidroponik segar
+            dengan sistem tanam modern tanpa tanah sehingga lebih
+            higienis, sehat, dan berkualitas.
+          </p>
+
+          <div class="benefits">
+
+            <div class="benefit">
+              <h4>Segar</h4>
+              <p>Dipanen setiap hari.</p>
+            </div>
+
+            <div class="benefit">
+              <h4>Higienis</h4>
+              <p>Tanpa tanah & lebih bersih.</p>
+            </div>
+
+            <div class="benefit">
+              <h4>Sehat</h4>
+              <p>Kaya nutrisi alami.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section>
+    <div class="container">
+
+      <div class="contact">
+
+        <h2>Info Pemesanan</h2>
+
+        <p>
+          📍 Dsn. Bangunrejo Ds. Pranggang Kec. Plosoklaten
+        </p>
+
+        <p>
+          📞 087860147419
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Sugyeong Farm
+  </footer>
+
+</body>
+</html>
